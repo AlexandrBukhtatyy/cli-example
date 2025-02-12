@@ -1,5 +1,6 @@
 # cli-example
 
+
 ## Installation
 
 ## Commands
@@ -30,3 +31,4 @@ cli-example
 ## Links
 * [Building a CLI App with Node.js in 2024](https://egmz.medium.com/building-a-cli-with-node-js-in-2024-c278802a3ef5)
 * [Building attractive CLIs in TypeScript](https://blog.terrible.dev/blog/Building-attractive-CLIs-in-JavaScript/)
+* [nodejs-cli-apps-best-practices](https://github.com/lirantal/nodejs-cli-apps-best-practices)
