@@ -1,5 +1,6 @@
 import {Command} from 'commander';
 import {spinnerSuccess, updateSpinnerText} from '../../utils/spinner';
+import {getById} from '../../lib/api/widgets.service';
 
 export function widgetsGetCommand() {
     return new Command('get')
@@ -7,8 +8,8 @@ export function widgetsGetCommand() {
         .option('-f, --format <format>', 'the format of the widget') // an optional flag, this will be in options.f
         .action(async (id, options) => {
             updateSpinnerText('Getting widget ' + id);
-            await new Promise(resolve => setTimeout(resolve, 3000));
+            const result = await getById(1);
             spinnerSuccess();
-            console.table({id: 1, name: 'Tommy'});
+            console.table(result);
         });
 }
